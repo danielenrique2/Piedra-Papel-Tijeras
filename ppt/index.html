@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Rock Paper Scissors</title>
+	<link rel="shortcut icon" type="image/png" href="favicon-32x32.png"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<!-- Ventana modal de las reglas del juego -->
+		<div class="rules-modal">
+			<div class="rules-box" id="rules-box">
+				<div class="rules-header">
+					<h1>RULES</h1>
+					<span class="close-btn" id="close-btn"></span>
+				</div>
+				
+				<img src="img/image-rules.svg">
+				<span class="close-btn-sm" id="close-btn-sm"></span>
+			</div>
+		</div>
+
+		<!-- EL juego -->
+		<div class="game" id="game">
+			<div class="header">
+				<div class="logo">
+					<img src="img/logo.svg">
+				</div>
+
+				<div class="score" id="score">
+					<span>SCORE</span>
+					<span id="score-value">0</span>
+				</div>
+			</div>
+
+			<!-- Caja de resultados -->
+			<div class="result" id="result">
+				<div class="picked" id="user-picked">
+					<span>YOU PICKED</span>
+					<div class="picked-item">
+						<div class="picked-image"></div>
+					</div>
+				</div>
+
+				<div class="result-output" id="result-output">
+					<span></span>
+					<button class="play-again" id="play-again">PLAY AGAIN</button>
+				</div>	
+
+				<div class="picked" id="house-picked">
+					<SPAN>THE HOUSE PICKED</SPAN>
+					<div class="picked-item">
+						<div class="picked-image"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Caja de los botones de juego -->
+			<div class="picker" id="picker"></div>
+
+			<!-- Botón para mostrar las reglas -->
+			<button class="rules-btn" id="rules-btn">RULES</button>
+		</div>
+		
+
+	</div>
+
+</body>
+</html>
